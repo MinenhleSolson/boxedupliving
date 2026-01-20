@@ -57,12 +57,12 @@ export default function ServicesPage() {
                 <div className="absolute inset-0 overflow-hidden z-0">
                     <motion.div
                         animate={{ rotate: 360 }}
-                        transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
+                        transition={{ duration: 50, repeat: Infinity, ease: "linear" as const }}
                         className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-green-500/10 to-transparent rounded-full blur-3xl"
                     />
                     <motion.div
                         animate={{ rotate: -360 }}
-                        transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+                        transition={{ duration: 40, repeat: Infinity, ease: "linear" as const }}
                         className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-green-500/10 to-transparent rounded-full blur-3xl"
                     />
                 </div>
